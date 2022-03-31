@@ -31,7 +31,7 @@ def abc(self):
     print("Hi, my name is %s. I earn %salary" % self.name % salary)
 salary = 20000
 emp_1 = Adult('Peter')
-emp_1.()
+print(emp_1)
 
 class Student(Adult, self):
     student = "James"
@@ -56,7 +56,7 @@ def abcd(self):
     print("Hi, my name is %s. I study" % self.name)
 
 stud_1 = Student('James')
-stud_1.()
+print(stud_1)
 
 class Child:
     child = "Jordan"
@@ -82,7 +82,7 @@ def abcd1(self):
 
 
 child_1 = Child('James')
-child_1.()
+print(child_1)
 
 class Worker(Human):
     worker = "Joe"
@@ -119,7 +119,7 @@ def abc2(self):
 
 salary1 = 20000
 emp_1 = Adult('Peter')
-emp_1.()
+print(emp_1)
 
 class Teacher(Worker):
     teacher = "Erica"
@@ -156,8 +156,8 @@ def abc3(self):
 
 salary2 = 25000
 teacher_1 = Teacher('Erica')
-teacher_1.()
-    
+print(teacher_1)
+
 
 
 
