@@ -132,7 +132,20 @@ def __init__2(self, first, pay):
     self.pay = pay
     self.email = f'{first}@company.ua'
     Teacher.number_of_adults += 1
+def __init__3(self, first, last):
+    self.first = first
+    self.last = last
+    print('RealPerson.__init__() ->')
+    super().__init__(first, last)
+    print('RealPerson.__init__() <-')
 
+
+print(RealPerson.mro())
+real_person = RealPerson('Baby', 'Groggo', 'GPS656', 'B52-2')
+print('--------------------')
+print(real_person.first)
+print(real_person.last)
+print(real_person.abbrev)
 
 def fullname3(self):
     return f'{self.first}'
@@ -157,7 +170,4 @@ def abc3(self):
 salary2 = 25000
 teacher_1 = Teacher('Erica')
 print(teacher_1)
-
-
-
 
