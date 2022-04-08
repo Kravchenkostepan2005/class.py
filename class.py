@@ -1,3 +1,4 @@
+@setter
 class Human:
     def __init__(self, name):
         self.name = name
@@ -6,6 +7,8 @@ class Human:
 human_j = Human("John")
 human_j.sayHi()
 
+@setter
+@property
 class Adult(Human, employee):
     employee = "Peter"
     increase_amount = 1.04
@@ -33,6 +36,8 @@ salary = 20000
 emp_1 = Adult('Peter')
 print(emp_1)
 
+@setter
+@property
 class Student(Adult, self):
     student = "James"
     number_of_students = 0
@@ -58,6 +63,8 @@ def abcd(self):
 stud_1 = Student('James')
 print(stud_1)
 
+@setter
+@property
 class Child:
     child = "Jordan"
     number_of_students = 0
@@ -84,6 +91,8 @@ def abcd1(self):
 child_1 = Child('James')
 print(child_1)
 
+@setter
+@property
 class Worker(Human):
     worker = "Joe"
     increase_amount = 1.04
@@ -121,6 +130,8 @@ salary1 = 20000
 emp_1 = Adult('Peter')
 print(emp_1)
 
+@setter
+@property
 class Teacher(Worker):
     teacher = "Erica"
     increase_amount = 1.04
